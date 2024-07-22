@@ -24,6 +24,11 @@ function createChallengeItem(challenge) {
 }
 
 function displayChallenges(challengesToDisplay) {
+  if (!challenges) {
+    // Prevent console error
+    return;
+  }
+
   const list = document.getElementById('challengesList');
   list.innerHTML = '';
   challengesToDisplay.forEach(challenge => {
