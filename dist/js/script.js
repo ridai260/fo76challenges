@@ -94,7 +94,7 @@ function isMinervaAround() {
 }
 
 if (isMinervaAround()) {
-  console.log("Minerva is around today.");
+  console.log("Minerva is around today: https://www.whereisminerva.com/");
 } else {
-  console.log("Minerva is not around today.");
+  console.log("Minerva is not around today");
 }
