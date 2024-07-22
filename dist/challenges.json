@@ -7,5 +7,7 @@
     { "id": 6, "name": "Pick 5 locks", "solution": "5 can be found northwest of Anchor Farm.", "video": "challenge_lockpick_1.mp4" },
     { "id": 7, "name": "Drink/Collect Nuka-Cola (all variants)", "solution": "Buying Nuka-Cola from Nuka-World counts, all variants are available required for challenges at the vending machines near the big tent.", "video": "" },
     { "id": 8, "name": "Hack a Terminal", "solution": "Fort Atlas, upstairs on the right, Paladin Rahmi's terminal (level 0).", "video": "challenge_hack_a_terminal.mp4" },
-    { "id": 9, "name": "Collect a Lighter, Cigarette, or Cigar", "solution": "Whitespring Bunker military wing desks (after Enclave questline).", "video": "challenge_collect_lighter_cigarette.mp4" }
+    { "id": 9, "name": "Collect a Lighter, Cigarette, or Cigar", "solution": "Whitespring Bunker military wing desks (after Enclave questline).", "video": "challenge_collect_lighter_cigarette.mp4" },
+    { "id": 10, "name": "Kill a Mole Miner", "solution": "<a target='_blank' href='https://fo76map.com?x=-0.8885930725744231&y=0.5382600797346697&zoom=13.265312686895415'>Welch</a>.", "video": "" },
+    { "id": 11, "name": "Kill a Ghoul", "solution": "<a target='_blank' href='https://fo76map.com?x=-0.72132718863827&y=0.6419019659817593&zoom=14'>The Whitespring Golf Club</a>.", "video": "" }
 ]
