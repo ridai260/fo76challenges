@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #222;
   margin: 0;
   padding: 0;
   display: flex;
@@ -14,7 +14,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 80%;
-  max-width: 800px;
+  max-width: 900px;
   margin-top: 10px;
 }
 
@@ -22,12 +22,27 @@ h1 {
   text-align: center;
 }
 
-#searchBox {
-  width: 100%;
+.search-container {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.search-container input[type="text"] {
   padding: 10px;
+  padding-left: 40px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 20px;
+  width: 100%;
   box-sizing: border-box;
+  background-color: #eeeeee;
+  color: #111111;
+}
+
+.search-container .search-icon {
+  position: absolute;
+  margin-left: 15px;
+  color: #ecf0f1;
 }
 
 #challengesList {
@@ -70,10 +85,6 @@ a:hover {
 
 a:active {
   color: #1abc9c;
-}
-
-body {
-  background-color: #2c3e50;
 }
 
 a:visited {
