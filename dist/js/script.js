@@ -1,6 +1,8 @@
 async function fetchChallenges() {
   try {
-      const response = await fetch('challenges.json');
+      const basePath = location.protocol + '//' + location.host;
+      console.log(basePath +'/challenges.json');
+      const response = await fetch(basePath +'/challenges.json');
       if (!response.ok) {
           throw new Error('Network response was not ok ' + response.statusText);
       }
@@ -12,19 +14,19 @@ async function fetchChallenges() {
 }
 
 function createChallengeItem(challenge) {
-  const basePath = location.protocol + '//' + location.host + '/';
+  const basePath = location.protocol + '//' + location.host;
   const listItem = document.createElement('li');
   listItem.className = 'challenge-item';
   listItem.innerHTML = `
       <h3>${challenge.name}</h3>
       <p>${challenge.solution}</p>
-      ${challenge.video ? `<video controls><source src="videos/${challenge.video}" type="video/mp4"></video>` : ''}
+      ${challenge.video ? `<video controls><source src="${basePath}/videos/${challenge.video}" type="video/mp4"></video>` : ''}
   `;
   return listItem;
 }
 
 function displayChallenges(challengesToDisplay) {
-  if (!challenges) {
+  if (!challengesToDisplay) {
     // Prevent console error
     return;
   }
