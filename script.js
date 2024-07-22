@@ -12,7 +12,7 @@ async function fetchChallenges() {
 }
 
 function createChallengeItem(challenge) {
-  const basePath = window.location.pathname;
+  const basePath = location.protocol + '//' + location.host + '/';
   const listItem = document.createElement('li');
   listItem.className = 'challenge-item';
   listItem.innerHTML = `
