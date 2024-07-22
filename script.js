@@ -12,13 +12,12 @@ async function fetchChallenges() {
 }
 
 function createChallengeItem(challenge) {
-  const basePath = location.protocol + '//' + location.host + '/';
   const listItem = document.createElement('li');
   listItem.className = 'challenge-item';
   listItem.innerHTML = `
       <h3>${challenge.name}</h3>
       <p>${challenge.solution}</p>
-      ${challenge.video ? `<video controls><source src="fo76challenges/videos/${challenge.video}" type="video/mp4"></video>` : ''}
+      ${challenge.video ? `<video controls><source src="${challenge.video}" type="video/mp4"></video>` : ''}
   `;
   return listItem;
 }
