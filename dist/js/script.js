@@ -54,3 +54,47 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   document.getElementById('searchBox').addEventListener('keyup', () => searchChallenges(challenges));
 });
+
+/* Minerva fun */
+function isMinervaAround() {
+  const now = new Date();
+  const currentDay = now.getUTCDay(); // Get the current day in UTC
+  const currentHour = now.getUTCHours(); // Get the current hour in UTC
+
+  // Convert US Eastern time to UTC time offset
+  const easternOffset = -4; // EDT is UTC-4 during Daylight Saving Time (change to -5 for EST)
+  
+  // Correcting UTC to US Eastern time
+  const easternTime = new Date(now.getTime() + easternOffset * 60 * 60 * 1000);
+  const easternDay = easternTime.getUTCDay();
+  const easternHour = easternTime.getUTCHours();
+
+  // Start date of the known cycle (pick a known Monday noon, this needs to be updated if it's far in the past)
+  const knownCycleStartDate = new Date(Date.UTC(2023, 6, 3, 16, 0)); // July 3, 2023, at noon US Eastern Time (16:00 UTC)
+  
+  // Calculate the difference in weeks from the known cycle start date
+  const msInAWeek = 7 * 24 * 60 * 60 * 1000;
+  const weeksSinceStart = Math.floor((now.getTime() - knownCycleStartDate.getTime()) / msInAWeek);
+  const currentCycleWeek = (weeksSinceStart % 4) + 1;
+
+  // Determine if Minerva is around today
+  if (currentCycleWeek === 4) {
+      // Week 4: Minerva's Big Sale, Thursday noon to Monday noon
+      if (easternDay === 4 && easternHour >= 12) return true;
+      if (easternDay > 4 && easternDay < 7) return true;
+      if (easternDay === 0 && easternHour < 12) return true;
+      return false;
+  } else {
+      // Week 1, 2, 3: Minerva's Emporium, Monday noon to Wednesday noon
+      if (easternDay === 1 && easternHour >= 12) return true;
+      if (easternDay === 2) return true;
+      if (easternDay === 3 && easternHour < 12) return true;
+      return false;
+  }
+}
+
+if (isMinervaAround()) {
+  console.log("Minerva is around today.");
+} else {
+  console.log("Minerva is not around today.");
+}
