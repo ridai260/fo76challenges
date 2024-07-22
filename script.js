@@ -12,12 +12,13 @@ async function fetchChallenges() {
 }
 
 function createChallengeItem(challenge) {
+  const basePath = window.location.pathname;
   const listItem = document.createElement('li');
   listItem.className = 'challenge-item';
   listItem.innerHTML = `
       <h3>${challenge.name}</h3>
       <p>${challenge.solution}</p>
-      ${challenge.video ? `<video controls><source src="videos/${challenge.video}" type="video/mp4"></video>` : ''}
+      ${challenge.video ? `<video controls><source src="${basePath}videos/${challenge.video}" type="video/mp4"></video>` : ''}
   `;
   return listItem;
 }
