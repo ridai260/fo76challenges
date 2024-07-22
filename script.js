@@ -18,7 +18,7 @@ function createChallengeItem(challenge) {
   listItem.innerHTML = `
       <h3>${challenge.name}</h3>
       <p>${challenge.solution}</p>
-      ${challenge.video ? `<video controls><source src="${basePath}videos/${challenge.video}" type="video/mp4"></video>` : ''}
+      ${challenge.video ? `<video controls><source src="fo76challenges/videos/${challenge.video}" type="video/mp4"></video>` : ''}
   `;
   return listItem;
 }
