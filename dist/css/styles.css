@@ -71,6 +71,13 @@ h1 {
   border-radius: 4px;
 }
 
+footer {
+  font-size: 12px;
+  padding-top: 1rem;
+  text-align: center;
+  color:#777;
+}
+
 /* Fancy links */
 a {
   color: #3498db;
