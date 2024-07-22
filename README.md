@@ -1,2 +1,2 @@
 # fo76challenges
-How to solve Fallout 76 challenges easily.
+A list of search-able solutions for efficient Fallout 76 challenge completion.

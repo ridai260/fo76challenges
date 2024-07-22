@@ -1,0 +1,10 @@
+[
+    { "id": 1, "name": "Kill 10 Super Mutants", "solution": "Head to West Tek Research Center. It resets if you leave the instance for 60 seconds.", "video": "" },
+    { "id": 2, "name": "Collect 10 Wood", "solution": "Visit <a target='_blank' href='https://fo76map.com?x=-0.8277557742430872&y=0.7785807173756041&zoom=13.411734150588753'>Gilman Lumber Mill</a> for lots of wood pile and log spawns.", "video": "" },
+    { "id": 3, "name": "Scrap junk to produce Antiseptic", "solution": "Go to the Spruce Knob Campground map maker and kill ticks for \"Tick Blood Sac\" (x2 Antiseptic).", "video": "challenge_scrap_junk_antiseptic.mp4" },
+    { "id": 4, "name": "Scrap junk to produce Aluminum", "solution": "Use a Tinker's Workbench to craft the material in bulk, then scrap this bulk material.", "video": "" },
+    { "id": 5, "name": "Earn 250 Caps", "solution": "Sell purified water (or West Tek weapons).", "video": "challenge_earn_250_caps.mp4" },
+    { "id": 6, "name": "Pick 5 locks", "solution": "5 can be found northwest of Anchor Farm.", "video": "challenge_lockpick_1.mp4" },
+    { "id": 7, "name": "Drink/Collect Nuka-Cola (all variants)", "solution": "Buying Nuka-Cola from Nuka-World counts, all variants are available required for challenges at the vending machines near the big tent.", "video": "" },
+    { "id": 8, "name": "Hack a Terminal", "solution": "Fort Atlas, upstairs on the right, Paladin Rahmi's terminal (level 0).", "video": "challenge_hack_a_terminal.mp4" }
+]
