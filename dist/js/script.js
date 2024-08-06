@@ -94,7 +94,9 @@ function isMinervaAround() {
 }
 
 if (isMinervaAround()) {
+  document.querySelector(".minerva-info").style.display = "block";
   console.log("Minerva is around today: https://www.whereisminerva.com/");
 } else {
+  document.querySelector(".minerva-info").style.display = "none";
   console.log("Minerva is not around today");
 }

@@ -13,8 +13,8 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  max-width: 900px;
+  width: 900px;
+  width: 70vw;
   margin-top: 10px;
 }
 
@@ -76,6 +76,28 @@ footer {
   padding-top: 1rem;
   text-align: center;
   color:#777;
+}
+
+.minerva-banner {
+  background-color: #333;
+  padding: 10px;
+}
+
+.minerva-info {
+  color:rgb(233, 217, 0);
+  text-align: center;
+  margin: 0;
+  display: none;
+}
+
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 /* Fancy links */
