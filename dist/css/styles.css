@@ -84,13 +84,13 @@ footer {
   border-radius: 30px;
   max-width: 580px;
   margin: 0 auto;
+  display: none;
 }
 
 .minerva-info {
   color:rgb(233, 217, 0);
   text-align: center;
   margin: 0;
-  display: none;
 }
 
 
